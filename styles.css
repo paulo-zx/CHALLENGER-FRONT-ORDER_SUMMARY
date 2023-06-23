@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.main{
+    background-color: var(--Paleblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height:100vh;
+    /* IMAGEM BACK*/
+
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    flex-direction: column;
+    /*
+    align-items: center;
+    justify-content: center;
+    */
+    row-gap: 30px;
+}
+
+.box-image{
+    background:white;
+    width: 100%;
+    height: 150px;
+   /* margin-bottom:70%;*/
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img1{  
+    width: 100%;
+    height: 100%;
+    background-size: cover;  
+    background-image: url(./images/illustration-hero.svg);
+    border-radius: 20px 20px 0px 0px;   
+}
+
+.box-text{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.b1{
+    font-size: larger;
+    font-weight: 800;
+}
+
+.b2{
+    width: 90%;
+    color: var(--Desaturatedblue);
+}
+
+.b3{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color:var(--Verypaleblue);
+    border-radius: 12px;
+    gap: 5%;
+    align-items: center;
+    height: 60px;
+    column-gap: 30px;
+    padding-left: 10px;
+    
+}
+
+
+
+.b3-p2-box1{
+    color: var(--Darkblue);
+    font-weight: 800;
+}
+
+.b3-p2-box2{
+    color: var(--Desaturatedblue);
+}
+
+.b3-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.b3-p3{
+    cursor: pointer;
+    text-decoration:underline;
+    color: var(--Brightblue);
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    background-size: cover;  
+    background-image: url(./images/icon-music.svg);
+    border-radius: 50%;
+}
+
+
+
+.b4{
+    width: 90%;
+    background-color:var(--Brightblue);
+    border-radius: 12px;
+    height: 50px;  
+    text-align: center; 
+    cursor: pointer;
+    padding: 1rem 0;
+    box-shadow: 0px 10px 10px rgba(189, 188, 188, 0.982);
+    transition: 0.3s;
+}
+
+.b4-h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: center;
+    color: white;
+    
+}
+
+.b5{
+    width: 90%;
+    background-color:var(--Verypaleblue);
+    border-radius: 12px;
+    height: 50px;  
+    text-align: center; 
+    cursor: pointer;
+    padding: 1rem 0;
+    margin-bottom: 10px;
+}
+.b5-h1{
+    color: var(--Desaturatedblue);
+
+}
+
+/*HOVER*/
+
+.b3-p3:hover{
+    
+    text-decoration:none;
+    color: hsl(245, 69%, 61%);
+}
+
+.b4:hover{
+    background-color: hsl(245, 69%, 61%);
+}
+
+.b5-h1:hover{
+    color:var(--Darkblue);
+
+}
+
+
+@media(max-width:375px){
+    .main{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .card{
+        margin: 20%;
+   }
+
+}
